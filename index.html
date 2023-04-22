@@ -2,14 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" class="css">
+    <title>User Management</title>
+
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="form-group">
+            <label for="profession">Profession:</label>
+            <select id="profession" name="profession">
+                <option value="">Select a profession</option>
+                <option value="developer">Developer</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+        <button id="filter-btn">Filter</button>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input id="age" name="age" type="number" />
+        </div>
+        <div class="form-group">
+            <label for="profession-input">Profession:</label>
+            <input id="profession-input" name="profession-input" type="text" />
+        </div>
+        <button id="add-btn">Add User</button>
+        <div id="users"></div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
